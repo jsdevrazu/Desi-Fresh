@@ -1,0 +1,159 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap");
+
+/* Css Variable */
+:root {
+  --primary-linear: linear-gradient(100deg, #fdbd12 100%, #fff 25%);
+  --secondary-linear: linear-gradient(
+    180deg,
+    #fdbd12 0%,
+    #ffffff 77.6%,
+    #ffffff 100%
+  );
+  --link-color: #3a3a3a;
+  --white-color: #fff;
+  --primary-font: "Lato", sans-serif;
+}
+
+/* Tailwind Css Config */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sec {
+    @apply py-16;
+  }
+  .app_container {
+    @apply px-4 md:px-10 lg:px-32;
+  }
+  .productRounded{
+    @apply h-6 w-6 md:w-10 md:h-10 rounded-full bg-primary flex items-center justify-center mb-2
+  }
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p,
+button,
+input,
+textarea {
+  font-family: var(--primary-font);
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  color: var(--white-color) !important;
+  border: none !important;
+}
+
+.trns-text {
+  background: var(--primary-linear);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* Below is not needed */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bg-gradient {
+  background: var(--secondary-linear);
+  /* Shadow/Overlay Top+Bottom */
+  padding: 32px 20px;
+  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.home_content {
+  -webkit-text-stroke: 1px var(--white-color);
+  color: transparent;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.link {
+  color: var(--link-color) !important;
+}
+
+.css-13cymwt-control{
+  border: none !important;
+  outline: none !important;
+}
+
+.header .css-13cymwt-control{
+  background-color: transparent !important;
+}
+
+.header .css-1dimb5e-singleValue{
+  color: var(--white-color) !important;
+}
+
+.header .css-1nmdiq5-menu{
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* <div class=" css-1nmdiq5-menu" id="react-select-9-listbox"><div class=" css-1n6sfyn-MenuList"><div class=" css-tr4s17-option" aria-disabled="false" id="react-select-9-option-0" tabindex="-1">Demo1</div><div class=" css-10wo9uf-option" aria-disabled="false" id="react-select-9-option-1" tabindex="-1">Demo2</div><div class=" css-10wo9uf-option" aria-disabled="false" id="react-select-9-option-2" tabindex="-1">Demo3</div></div></div> */
+
+/* Footer */
+.footer {
+  display: grid;
+  place-items: start;
+  grid-row-gap: 2.5rem;
+  grid-column-gap: 1rem;
+  -webkit-column-gap: 1rem;
+  column-gap: 1rem;
+  font-size: .875rem;
+  grid-auto-flow: row;
+  line-height: 1.25rem;
+  row-gap: 2.5rem;
+  width: 100%;
+}
+
+.footer_item{
+  display: grid;
+  place-items: start;
+  grid-gap: 0.5rem;
+  gap: 0.5rem;
+}
+
+.link {
+  color: var(--link-color)!important;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  text-decoration-line: underline;
+}
+
+
+@media (min-width: 1280px) {
+  .trns-text  {
+    font-size: 8px;
+  }
+}
+@media (min-width: 48rem) {
+  .footer {
+    grid-auto-flow: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .home_content {
+    font-size: 2em;
+  }
+  .footer_item{
+    display: none;
+  }
+}

@@ -1,0 +1,8 @@
+export { default as Header } from './Header/Header'
+export { default as ResponsiveHeader } from './Header/ResponsiveHeader'
+export { default as Footer } from './Footer/Footer'
+export { default as IconTitle } from './IconTitle/IconTitle'
+export { default as BannerCard } from './BannerCard/BannerCard'
+export { default as ProductCard } from './ProductCard/ProductCard'
+export { default as LikeCategoryCard } from './LikeCategoryCard/LikeCategoryCard'
+export { default as ReginalRecipesCard } from './ReginalRecipies/ReginalRecipies'
