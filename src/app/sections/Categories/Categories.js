@@ -29,11 +29,11 @@ const DATA1 = [
 
 const Categories = () => {
   return (
-    <section className="mt-10 hidden md:block ">
+    <section className="mt-10 hidden md:block">
       <div className="app_container">
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-6 w-full">
           {/* Left Side Banner */}
-          <div className="bg-gradient xl:w-[35%] 2xl:max-w-[771px]">
+          <div className="bg-gradient lg:w-full xl:w-[35%] 2xl:w-[47%]">
             <div className="flex items-center gap-4">
               <div className="w-full 2xl:w-[60%]">
                 <img
@@ -117,7 +117,7 @@ const Categories = () => {
             </p>
           </div>
           {/* Right Side Banner */}
-          <div className="xl:w-[60%] 2xl:max-w-[777px]">
+          <div className="lg:w-full xl:flex-1">
             <div className="flex flex-wrap">
               {BANNERDATA.map((item, i) => (
                 <BannerCard {...item} key={i} />

@@ -20,7 +20,7 @@ const RecommendedCategory = () => {
             />
           </h1>
         </div>
-        <div className="px-20 flex items-center gap-10">
+        <div className="px-20 flex items-center md:justify-between xl:gap-10 2xl:gap-[86px]">
           {RECOMANDEDCATEGORIESDATA.map((item, index) => (
             <IconTitle
               icon={item.path}
@@ -30,7 +30,7 @@ const RecommendedCategory = () => {
               key={index}
               isCircle={true}
               isActive={item.isActve}
-              
+              className="xl:w-[110px] 2xl:w-[136px]"
             />
           ))}
         </div>

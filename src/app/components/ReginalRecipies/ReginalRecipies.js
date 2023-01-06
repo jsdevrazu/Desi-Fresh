@@ -4,7 +4,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const ReginalRecipesCard = ({ path, bgPath }) => {
   return (
     <>
-      <div className="rounded-lg relative lg:max-w-[330px] xl:max-w-[375px] 2xl:max-w-[551px] mb-6">
+      <div className="rounded-lg relative md:max-w-[48%] xl:w-[32%] mb-6">
         <img
           src={bgPath}
           alt="Desi"

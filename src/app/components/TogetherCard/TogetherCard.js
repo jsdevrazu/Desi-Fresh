@@ -12,7 +12,7 @@ const TogetherCard = ({
 }) => {
   return (
     <>
-      <div className={`relative lg:max-w-[330px] xl:max-w-[360px] 2xl:max-w-[551px] rounded-2xl ml-4 h-[300px] ${className}`}>
+      <div className={`relative md:w-[48%] md:mb-6 md:ml-0 xl:mb-0 xl:w-[32%] rounded-2xl ml-4 h-[300px] ${className}`}>
         <div className="absolute top-0 left-0 w-full h-full bg-textColor  rounded-2xl bg-opacity-40 overflow-hidden"></div>
         <img src={path} className="rounded-2xl w-full h-full object-cover" alt="Desi" />
         <div

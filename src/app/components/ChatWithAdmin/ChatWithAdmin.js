@@ -5,7 +5,7 @@ import { COLORS } from "../../config/colors";
 
 const ChatWithAdmin = () => {
   return (
-    <div className="fixed z-[1000] right-6 bottom-20 md:right-10">
+    <div className="fixed z-[1000] right-6 bottom-20 md:bottom-10 md:right-10">
       <div className="hidden md:flex justify-center items-center mb-10 cursor-pointer">
       <TfiArrowUp size={25} color={COLORS.primary} />
       </div>
